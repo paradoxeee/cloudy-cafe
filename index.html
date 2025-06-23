@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chango&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>The cloudy cafe</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="block" id="section1">
+            <div class="main-content">
+                <header>
+                    <div class="container">
+                        <div class="container-nav">
+                            <nav class="navbar">
+                                <div class="navbar-left">
+                                    <img src="/src/img/logo.svg" alt="The cloudy cafe" class="logo">
+                                </div>
+
+                                <div class="navbar-center">
+                                    <a href="#section2" class="nav-button">Menu</a>
+                                    <a href="#section2" class="nav-button">Order</a>
+                                </div>
+                                <div class="navbar-right">
+                                    <div class="cloud-image">
+                                        <a href="#"><img src="/src/img/cloud.svg" alt="cloud image"
+                                                class="cloudy-image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <h1 class="title">THE CLOUDY CAFE</h1>
+                    <div class="card-container">
+                        <div class="card" id="pancakes">
+                            <div class="card-image">
+                                <img src="/src/img/pankake.png" alt="Rainbow Pancakes">
+                            </div>
+                            <h2 class="card-title">Rainbow Pancakes</h2>
+                            <p class="card-description">
+                                A fluffy dream stack: soft rainbow-colored pancakes topped with a swirl of whipped cream
+                                and
+                                a sprinkle of pastel fruits
+                                for a magical, sweet moment.
+                            </p>
+                        </div>
+                        <div class="card" id="smoothie-galaxy">
+                            <div class="card-image">
+                                <img src="/src/img/smoothie-galaxy.png" alt="Galaxy Smoothie">
+                            </div>
+                            <h2 class="card-title">Galaxy Smoothie</h2>
+                            <p class="card-description">
+                                A cosmic delight: smooth and fruity blend in dreamy shades of violet and blue, served in
+                                a
+                                whimsical glass. Fresh, fun,
+                                and out of this world.
+                            </p>
+                        </div>
+                        <div class="card" id="starry-pizza">
+                            <div class="card-image">
+                                <img src="/src/img/pizza-star.png" alt="Starry Pizza">
+                            </div>
+                            <h2 class="card-title">STARRY PIZZA</h2>
+                            <p class="card-description">
+                                A TASTE OF THE STARS: CRISPY STAR-SHAPED CRUST, DRIZZLED WITH CREAMY WHITE SAUCE AND
+                                MELTED
+                                CHEESE. A GOLDEN TREAT FROM ANOTHER GALAXY.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="scroll-container">
+                        <h1 class="scroll">scroll</h1>
+                        <a href="#section2"><img src="/src/img/arrow.png" alt="Arrow" class="arrow-image"></a>
+
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <section class="block" id="section2">
+            <div class="main-content">
+                <main>
+                    <h1 class="title order-title">ORDER YOUR DREAM</h1>
+                    <div class="order-container">
+                        <form class="order-form" id="orderForm">
+                            <div class="form-section">
+                                <h2 class="section-title">Choose Your Treats</h2>
+                                <div class="menu-items">
+                                    <div class="menu-item">
+                                        <input type="checkbox" id="pancakes-order" name="items" value="Rainbow Pancakes">
+                                        <label for="pancakes-order" class="item-label">
+                                            <div class="item-info">
+                                                <span class="item-name">Rainbow Pancakes</span>
+                                                <span class="item-price">$12.99</span>
+                                            </div>
+                                            <div class="quantity-controls">
+                                                <button type="button" class="qty-btn minus" data-item="pancakes">-</button>
+                                                <span class="quantity" id="qty-pancakes">1</span>
+                                                <button type="button" class="qty-btn plus" data-item="pancakes">+</button>
+                                            </div>
+                                        </label>
+                                    </div>
+        
+                                    <div class="menu-item">
+                                        <input type="checkbox" id="smoothie-order" name="items" value="Galaxy Smoothie">
+                                        <label for="smoothie-order" class="item-label">
+                                            <div class="item-info">
+                                                <span class="item-name">Galaxy Smoothie</span>
+                                                <span class="item-price">$8.99</span>
+                                            </div>
+                                            <div class="quantity-controls">
+                                                <button type="button" class="qty-btn minus" data-item="smoothie">-</button>
+                                                <span class="quantity" id="qty-smoothie">1</span>
+                                                <button type="button" class="qty-btn plus" data-item="smoothie">+</button>
+                                            </div>
+                                        </label>
+                                    </div>
+        
+                                    <div class="menu-item">
+                                        <input type="checkbox" id="pizza-order" name="items" value="Starry Pizza">
+                                        <label for="pizza-order" class="item-label">
+                                            <div class="item-info">
+                                                <span class="item-name">Starry Pizza</span>
+                                                <span class="item-price">$15.99</span>
+                                            </div>
+                                            <div class="quantity-controls">
+                                                <button type="button" class="qty-btn minus" data-item="pizza">-</button>
+                                                <span class="quantity" id="qty-pizza">1</span>
+                                                <button type="button" class="qty-btn plus" data-item="pizza">+</button>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="form-section">
+                                <h2 class="section-title">Your Details</h2>
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required placeholder=" ">
+                                    <label for="name" class="floating-label">Full Name</label>
+                                </div>
+        
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required placeholder=" ">
+                                    <label for="email" class="floating-label">Email</label>
+                                </div>
+        
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" required placeholder=" ">
+                                    <label for="phone" class="floating-label">Phone</label>
+                                </div>
+        
+                                <div class="form-group">
+                                    <textarea id="address" name="address" required placeholder=" " rows="2"></textarea>
+                                    <label for="address" class="floating-label">Address</label>
+                                </div>
+        
+                                <div class="form-group">
+                                    <textarea id="notes" name="notes" placeholder=" " rows="2"></textarea>
+                                    <label for="notes" class="floating-label">Notes (Optional)</label>
+                                </div>
+                            </div>
+        
+                            <div class="form-section full-width">
+                                <div class="order-summary">
+                                    <h3>Order Summary</h3>
+                                    <div class="total-price">
+                                        Total: $<span id="total-amount">0.00</span>
+                                    </div>
+                                </div>
+        
+                                <button type="submit" class="submit-btn">
+                                    <span>Place Your Cloud Order</span>
+                                    <div class="btn-cloud">☁️</div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <section class="block" id="section3">
+            <div class="main-content">
+                <div class="contact-container">
+                    <h1 class="contact-title">Made with ❤️ by Gianni</h1>
+                    <p class="contact-subtitle">
+                        Passionate cybersecurity student, I develop creative 
+                        and innovative projects. Discover my universe and let's connect!
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/paradoxeee" target="_blank" class="social-link github">
+                            <div class="social-icon">💻</div>
+                            <div class="social-name">GitHub</div>
+                            <div class="social-handle">paradoxeee</div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/gianni-gualtieri" target="_blank" class="social-link linkedin">
+                            <div class="social-icon">💼</div>
+                            <div class="social-name">LinkedIn</div>
+                            <div class="social-handle">gianni-gualtieri</div>
+                        </a>
+                        
+                        <a href="https://www.giannigualtieri.fr" target="_blank" class="social-link portfolio">
+                            <div class="social-icon">🌐</div>
+                            <div class="social-name">Portfolio</div>
+                            <div class="social-handle">giannigualtieri.fr</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+</body>
+
+</html>
